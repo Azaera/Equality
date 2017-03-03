@@ -1,0 +1,19 @@
+#£{
+    -webkit-linear-gradient();
+}
+
+html {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    width: 900px;
+    height: auto;
+    background: red; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#750787 16%, #004DFF 32%, #008026 48%, #FFED00 64%, #FF8C00 80%, #E40303 100%); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#750787 16%, #004DFF 32%, #008026 48%, #FFED00 64%, #FF8C00 80%, #E40303 100%); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#750787 16%, #004DFF 32%, #008026 48%, #FFED00 64%, #FF8C00 80%, #E40303 100%); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#750787 16%, #004DFF 32%, #008026 48%, #FFED00 64%, #FF8C00 80%, #E40303 100%); /* Standard syntax */
+    
+}
