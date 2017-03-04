@@ -13,3 +13,46 @@ body {
     background: linear-gradient(#750787 16%, #004DFF 32%, #008026 48%, #FFED00 64%, #FF8C00 80%, #E40303 100%); /* Standard syntax */
     
 }
+
+nav {
+    width: 70%;
+    height: 7%;
+    margin-left: 12%;
+    background: transparent;
+    position: absolute;
+    text-align: center;
+    display: inline-block;
+    font-size: 26px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+
+}
+
+nav ul li a {
+    float: left;
+    position: relative;
+    width:15%;
+    height: 50px;
+    background: rgba(0,0,0,0.29);
+    border-radius: 30px;
+    border-left: 3px solid #46fb26;
+    border-right: 3px solid #46fb26; 
+    margin-left: 8%;
+    color: #FFFFFF;
+    padding: 10px 0 0px;
+}
+
+/* Main container */
+
+#mainContent {
+    width: 60%;
+    height: 50%;
+    margin: 10% 20%;
+    background-color: transparent;
+    position: absolute;
+    border: 2px solid #000000;
+    border-radius: 10px;
+}
