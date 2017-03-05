@@ -13,36 +13,80 @@ body {
     background: linear-gradient(#750787 16%, #004DFF 32%, #008026 48%, #FFED00 64%, #FF8C00 80%, #E40303 100%); /* Standard syntax */
     
 }
+.sub-menu-parent {
+    position: relative;
+}
+
+.sub-menu { 
+  visibility: hidden; /* hides sub-menu */
+  opacity: 0;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  transform: translateY(-2em);
+  z-index: -1;
+  transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
+}
+
+.sub-menu-parent:hover .sub-menu {
+  visibility: visible; /* shows sub-menu */
+  opacity: 1;
+  z-index: 1;
+  transform: translateY(0%);
+  transition-delay: 0s, 0s, 0.3s; /* this removes the transition delay so the menu will be visible while the other styles transition */
+}
 
 nav {
     width: 70%;
     height: 7%;
     margin-left: 12%;
-    background: transparent;
     position: absolute;
-    text-align: center;
-    display: inline-block;
-    font-size: 26px;
 }
 
-nav ul {
-    list-style: none;
+nav a {
+    color: #E00;
+    display: block;
+    padding: 0.5em 1em;
+    text-decoration: none;
+}
+nav a:hover {
+    color: #F55;
+}
+
+nav ul,
+nav ul li {
+    list-style-type: none;
+    padding: 0;
     margin: 0;
+    border-radius: 30px;
 
 }
 
-nav ul li a {
-    float: left;
-    position: relative;
-    width:15%;
-    height: 50px;
-    background: rgba(0,0,0,0.29);
-    border-radius: 30px;
-    border-left: 3px solid #46fb26;
-    border-right: 3px solid #46fb26; 
+nav > ul {
+    background: transparent;
+    text-align: center;
+}
+
+nav > ul > li {
+    display: inline-block;
+    border-left: 3px solid #008026;
+    border-right: 3px solid #FFED00;
+    font-size: 26px;
     margin-left: 8%;
+    background: rgba(0,0,0,0.29);
+}
+
+.sub-menu {
+    background: transparent;
+    font-size: 15px;
+}
+
+.sub-menu a:hover {
+    background: rgba(0,0,0,0.29);
+    font-size: 15px;
     color: #FFFFFF;
-    padding: 10px 0 0px;
+    border-radius: 30px;
 }
 
 /* Main container */
