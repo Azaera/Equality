@@ -1,0 +1,63 @@
+
+.flag {
+    width: 50em;
+    height: 25em;
+    border: 1px solid #000000;
+    margin: 0 auto;
+    background-color: #000000;
+    /* #750787 16%, #004DFF 32%, #008026 48%, #FFED00 64%, #FF8C00 80%, #E40303 100%*/
+    background-image: linear-gradient(#750787 16%, transparent 16%),
+    linear-gradient(#004DFF 32%, transparent 32%),
+    linear-gradient(#008026 48%, transparent 48%),
+    linear-gradient(#FFED00 64%, transparent 64%),
+    linear-gradient(#FF8C00 80%, transparent 80%),
+    linear-gradient(#E40303 100%, transparent 100%);
+    border: 1px solid #bbb;
+  	border-left-color: white;
+  box-sizing: border-box;
+	box-shadow: 2px 5px 14px 0px rgba(0,0,0,0.4);
+  -webkit-backface-visibility: hidden;
+  -webkit-perspective: 1000;
+  -webkit-transform-style: preserve3d;
+  -webkit-transform-origin: 0 250px;
+  -webkit-transform: translate3d(0, 0, 0) rotateZ(5deg) rotateY(-22deg);
+
+	-webkit-animation-name: wave;
+	-webkit-animation-duration: 8s;
+	-webkit-animation-timing-function: cubic-bezier(.16,.14,.82,.73);
+  	-webkit-animation-timing-function: linear;
+	-webkit-animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes wave {
+
+	0% {
+		box-shadow: 4px 5px 5px 0 rgba(0,0,0,0.1);
+        -webkit-transform: translate3d(0, 0, 0) rotateZ(5deg) rotateY(22deg);
+
+	}
+
+	20% {
+		box-shadow: 4px 5px 15px 0 rgba(0,0,0,0.1);
+     -webkit-transform: translate3d(0, 0, 0) rotateZ(5deg) rotateY(0deg);
+	}
+
+  40% {
+		box-shadow: 4px 5px 20px 0 rgba(0,0,0,0.4);
+   -webkit-transform: translate3d(0, 0, 0) rotateZ(6deg) rotateY(-22deg);
+	}
+  
+  	60% {
+		box-shadow: 4px 5px 5px 0 rgba(0,0,0,0.1);
+     -webkit-transform: translate3d(0, 0, 0) rotateZ(5deg) rotateY(0deg);
+	}
+
+  80% {
+		box-shadow: 4px 5px 5px 0 rgba(0,0,0,0.3);
+   -webkit-transform: translate3d(0, 0, 0) rotateZ(5deg) rotateY(16deg);
+	}
+  
+	100% {
+		box-shadow: 4px 5px 5px 0 rgba(0,0,0,0.1);
+   -webkit-transform: translate3d(0, 0, 0) rotateZ(5deg) rotateY(22deg);
+	}
